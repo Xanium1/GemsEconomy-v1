@@ -1,0 +1,58 @@
+# GemsEconomy plugin created by JohnCrafted, https://www.spigotmc.org/resources/gemseconomy.19655/
+# If you are looking for the account section. Goto to the file "accounts.yml" or your mysql database.
+# Please do not reload your server, restart it instead.
+# ------------------------------------------------------------------------------------------------------------------------------------------
+# MVdWPlaceholderAPI hook, requires the plugin "MVdWPlaceholderAPI", " https://www.spigotmc.org/resources/mvdwplaceholderapi.11182/ "
+# Clips PlaceholderAPI hook, requires the plugin "PlaceholderAPI", " https://www.spigotmc.org/resources/placeholderapi.6245/ "
+# If you don't have either of the plugins above installed and set these two settings to "true", you will get an error.
+# ------------------------------------------------------------------------------------------------------------------------------------------
+# Messages, You can edit these messages which show up ingame, to your liking.
+# prefix will always show up before the messages ex: [prefix, message]
+# txtColor is the color of for example the "noPermission" string.
+# The rest is just string messages.
+# Do NOT EDIT the 'balance:' words or any ending with a colon.
+# If you forgot the value tags... [%player%, %balance%, %amount%]
+# NB, You have to put the text color's code after any placeholders like those up above this string sentence.
+# ------------------------------------------------------------------------------------------------------------------------------------------
+# DO NOT USE THE PLACEHOLDER SETTINGS WHILE USING A MYSQL DATABASE. THEY WILL CREATE TO MANY CONNECTIONS TO THE DATABASE.
+# THE DATABASE WILL PROBABLY LOCK IT SELF DOWN. I RECOMMEND TO USE THE FLATFILE IF YOU'RE USING MVDW OR CLIPS PLACEHOLDER PLUGINS.
+# ------------------------------------------------------------------------------------------------------------------------------------------
+MySQL:
+  enable: false
+  user: 'root'
+  password: ''
+  port: '3306'
+  host: 'localhost'
+  database: 'gemseconomy'
+  table: 'gems_'
+settings:
+  mvdwplaceholderapi: false
+  ezplaceholderapi: false
+  registerPlayerOnJoin: false
+messages:
+  prefix: '&a&lGems '
+  txtColor: '&7'
+  noPermission: "You do not have the required permission to execute this command or action."
+  notAPlayer: "You are not a player."
+  playerNotFound: "%player% not found!"
+  playerMissingAccount: "This player does not have a Gem Account registered."
+  balance: "Your balance: &a%balance%"
+  balanceOther: "Player &e%player%&7's balance: &a%balance%"
+  payUsage: "Usage: &a/pay <player> <amount>"
+  notAValidInt: "That is not a valid integer."
+  notAValidUser: "That username doesn't have a UUID/User does not exist."
+  notEnoughGems: "You don't have enough gems to do this."
+  gemsAccountUpdated: "Your Gems account were updated."
+  gemsAccountCreated: "We have created a gem account for you. (First Time Join)"
+  gemsReset: "Your Gem account were resetted."
+  gemsResetOther: "You resetted &a%player%&7's gem account."
+  gemsAdded: "You received &e%amount% &7gems."
+  gemsAddedOther: "You added &e%amount% &7gems to &a%player%."
+  gemsTaken: "You lost &e%amount% &7gems."
+  gemsTakenOther: "You removed &e%amount% &7gems from &a%player%&7."
+  gemsPaid: "You paid &e%amount% &7to &a%player%."
+  gemsPaidOther: "You received &e%amount% &7from &a%player%."
+  gemsPaidError: "You can't pay yourself."
+  gemsSet: "You set &e%amount% &7gems to your account."
+  gemsSetOther: "You set &e%amount% &7gems to &a%player%."
+gems: []

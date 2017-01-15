@@ -1,0 +1,20 @@
+name: GemsEconomy
+version: 1.0
+main: GemsEconomy
+author: JohnCrafted
+description: An custom economy plugin for spigot servers.
+website: https://www.spigotmc.org/resources/gemseconomy.19655/
+softdepend: [MVdWPlaceholderAPI, PlaceholderAPI]
+commands:
+  gems:
+    usage: /<command>
+    aliases: [gem, gemseconomy]
+    description: GemsEconomy Action command.
+  balance:
+    usage: /balance (player)
+    aliases: [bal, gembal, gemsbalance, gemsbal]
+    description: Gives you your balance or another players.
+  pay:
+    usage: /pay <player> <amount>
+    aliases: [gemspay, gpay]
+    description: Pay another player an amount of gems.
