@@ -1,0 +1,3 @@
+You are allowed to use this code for your plugins. But you are not allowed to claim this code as your own! That would void any agreements I got with you.
+You will find some useful classes in this plugin you've might want to use for your development. You are still not allowed to take any snippets or any code.
+You are allowed to use this code for development purposes but you have to contact me (JohnCrafted) first!
